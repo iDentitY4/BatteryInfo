@@ -35,6 +35,15 @@ namespace BatteryInfo
             batChargePercent.Text = ((int)batPercent).ToString() + '%';
             batChargeBar.Value = (int)batPercent;
 
+            // log full charge 
+            if ((int)batPercent >= 90)
+            {
+                System.IO.File.WriteAllText(@"C:\Users\super\Code\C#\BatteryInfo\log.txt", DateTime.Now.ToString());
+            }
+            // compare full charge to now 
+            DateTime fullCharge = Convert.ToDateTime(System.IO.File.ReadAllText(@"C:\Users\super\Code\C#\BatteryInfo\log.txt"));
+            TimeSpan sinceCharge = DateTime.Now.Subtract(fullCharge);
+
             // charging status (batChargingStatusInfo)
             PowerLineStatus chargingStatus = SystemInformation.PowerStatus.PowerLineStatus;
             if (chargingStatus.ToString() == "Online")
@@ -45,17 +54,21 @@ namespace BatteryInfo
                 // set notify icon text 
                 batInfoIcon.Text = "Charge: " + ((int)batPercent).ToString()
                 + "%\n" + "Charging: " + batChargingState
-                + "\n" + "Time since last charge: ";
+                + "\n" + "Time since last charge: " + Math.Round(sinceCharge.TotalHours, 2) + 'h';
             }
             else
             {
+                // same as before
                 string batChargingState = "Discharging";
+
                 batChargingStatusInfo.Text = batChargingState;
 
                 batInfoIcon.Text = "Charge: " + ((int)batPercent).ToString()
                 + "%\n" + "Charging: " + batChargingState
-                + "\n" + "Time since last charge: ";
+                + "\n" + "Time since last charge: " + Math.Round(sinceCharge.TotalHours, 2) + 'h';
             }
+
+            timeSinceLastFullInfo.Text = Math.Round(sinceCharge.TotalHours, 2).ToString() + 'h';
 
             
 
