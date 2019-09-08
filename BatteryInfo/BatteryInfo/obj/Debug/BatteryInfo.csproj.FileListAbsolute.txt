@@ -1,0 +1,10 @@
+C:\Users\super\Code\C#\BatteryInfo\BatteryInfo\BatteryInfo\bin\Debug\BatteryInfo.exe.config
+C:\Users\super\Code\C#\BatteryInfo\BatteryInfo\BatteryInfo\bin\Debug\BatteryInfo.exe
+C:\Users\super\Code\C#\BatteryInfo\BatteryInfo\BatteryInfo\bin\Debug\BatteryInfo.pdb
+C:\Users\super\Code\C#\BatteryInfo\BatteryInfo\BatteryInfo\obj\Debug\BatteryInfo.csprojAssemblyReference.cache
+C:\Users\super\Code\C#\BatteryInfo\BatteryInfo\BatteryInfo\obj\Debug\BatteryInfo.Form1.resources
+C:\Users\super\Code\C#\BatteryInfo\BatteryInfo\BatteryInfo\obj\Debug\BatteryInfo.Properties.Resources.resources
+C:\Users\super\Code\C#\BatteryInfo\BatteryInfo\BatteryInfo\obj\Debug\BatteryInfo.csproj.GenerateResource.cache
+C:\Users\super\Code\C#\BatteryInfo\BatteryInfo\BatteryInfo\obj\Debug\BatteryInfo.csproj.CoreCompileInputs.cache
+C:\Users\super\Code\C#\BatteryInfo\BatteryInfo\BatteryInfo\obj\Debug\BatteryInfo.exe
+C:\Users\super\Code\C#\BatteryInfo\BatteryInfo\BatteryInfo\obj\Debug\BatteryInfo.pdb
