@@ -33,8 +33,6 @@ namespace BatteryInfo
 
         }
 
-        
-
         private void updateWindow(object sender, EventArgs e) /// auto update gui on every timer call 
         {
             // hide taskbar icon if minimized (keep notify icon)
