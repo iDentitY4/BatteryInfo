@@ -3,7 +3,7 @@
 This is the C# implementation of the app, check out the Python version on my profile.
 
 A tool for Android-like battery monitoring.
-You can find the built .exe in BatteryInfo/BatteryInfo/BatteryInfo/obj/Release/
+You can find the built .exe in BatteryInfo/BatteryInfo/obj/Release/
 
 Current Features:
   - Percent Charge
