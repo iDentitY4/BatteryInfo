@@ -12,5 +12,4 @@ Current Features:
   - time since last charge 
   
 Bugs:
-  - not handling for PCs without a battery, programm will crash
-  - Yes, same bug - No, I haven't learned.
+  - The Context Menu text will sometimes be over 64 characters long, which causes a crash
