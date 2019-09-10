@@ -76,7 +76,7 @@ namespace BatteryInfo
 
                 batInfoIcon.Text = "Charge: " + ((int)batPercent).ToString()
                 + "%\n" + "Charging: " + batChargingState
-                + "\n" + "Time since last charge: " + Math.Round(sinceCharge.TotalHours, 2) + 'h';
+                + "\n" + "Last charge: " + Math.Round(sinceCharge.TotalHours, 2) + 'h';
             }
 
             timeSinceLastFullInfo.Text = Math.Round(sinceCharge.TotalHours, 2).ToString() + 'h'; /// put time since last charge on screen 
