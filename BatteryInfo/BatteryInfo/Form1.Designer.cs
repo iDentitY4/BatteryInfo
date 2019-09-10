@@ -43,63 +43,64 @@
             // batChargeLabel
             // 
             this.batChargeLabel.AutoSize = true;
-            this.batChargeLabel.Location = new System.Drawing.Point(12, 16);
+            this.batChargeLabel.Location = new System.Drawing.Point(14, 20);
             this.batChargeLabel.Name = "batChargeLabel";
-            this.batChargeLabel.Size = new System.Drawing.Size(107, 17);
+            this.batChargeLabel.Size = new System.Drawing.Size(120, 20);
             this.batChargeLabel.TabIndex = 0;
             this.batChargeLabel.Text = "Battery Charge:";
             // 
             // batChargeBar
             // 
-            this.batChargeBar.Location = new System.Drawing.Point(250, 12);
+            this.batChargeBar.Location = new System.Drawing.Point(281, 15);
+            this.batChargeBar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.batChargeBar.Name = "batChargeBar";
-            this.batChargeBar.Size = new System.Drawing.Size(100, 23);
+            this.batChargeBar.Size = new System.Drawing.Size(112, 29);
             this.batChargeBar.TabIndex = 1;
             // 
             // batChargePercent
             // 
             this.batChargePercent.AutoSize = true;
-            this.batChargePercent.Location = new System.Drawing.Point(206, 15);
+            this.batChargePercent.Location = new System.Drawing.Point(232, 19);
             this.batChargePercent.Name = "batChargePercent";
-            this.batChargePercent.Size = new System.Drawing.Size(44, 17);
+            this.batChargePercent.Size = new System.Drawing.Size(50, 20);
             this.batChargePercent.TabIndex = 2;
             this.batChargePercent.Text = "100%";
             // 
             // batChargingStatusLabel
             // 
             this.batChargingStatusLabel.AutoSize = true;
-            this.batChargingStatusLabel.Location = new System.Drawing.Point(12, 60);
+            this.batChargingStatusLabel.Location = new System.Drawing.Point(14, 75);
             this.batChargingStatusLabel.Name = "batChargingStatusLabel";
-            this.batChargingStatusLabel.Size = new System.Drawing.Size(113, 17);
+            this.batChargingStatusLabel.Size = new System.Drawing.Size(128, 20);
             this.batChargingStatusLabel.TabIndex = 3;
             this.batChargingStatusLabel.Text = "Charging Status:";
             // 
             // batChargingStatusInfo
             // 
             this.batChargingStatusInfo.AutoSize = true;
-            this.batChargingStatusInfo.Location = new System.Drawing.Point(267, 60);
+            this.batChargingStatusInfo.Location = new System.Drawing.Point(300, 75);
             this.batChargingStatusInfo.Name = "batChargingStatusInfo";
-            this.batChargingStatusInfo.Size = new System.Drawing.Size(83, 17);
+            this.batChargingStatusInfo.Size = new System.Drawing.Size(93, 20);
             this.batChargingStatusInfo.TabIndex = 4;
             this.batChargingStatusInfo.Text = "Discharging";
             // 
             // timeSinceLastFullLabel
             // 
             this.timeSinceLastFullLabel.AutoSize = true;
-            this.timeSinceLastFullLabel.Location = new System.Drawing.Point(12, 107);
+            this.timeSinceLastFullLabel.Location = new System.Drawing.Point(14, 134);
             this.timeSinceLastFullLabel.Name = "timeSinceLastFullLabel";
-            this.timeSinceLastFullLabel.Size = new System.Drawing.Size(176, 17);
+            this.timeSinceLastFullLabel.Size = new System.Drawing.Size(194, 20);
             this.timeSinceLastFullLabel.TabIndex = 5;
             this.timeSinceLastFullLabel.Text = "Time since last full charge:";
             // 
             // timeSinceLastFullInfo
             // 
-            this.timeSinceLastFullInfo.AutoSize = true;
-            this.timeSinceLastFullInfo.Location = new System.Drawing.Point(310, 107);
+            this.timeSinceLastFullInfo.Location = new System.Drawing.Point(232, 134);
             this.timeSinceLastFullInfo.Name = "timeSinceLastFullInfo";
-            this.timeSinceLastFullInfo.Size = new System.Drawing.Size(40, 17);
+            this.timeSinceLastFullInfo.Size = new System.Drawing.Size(161, 20);
             this.timeSinceLastFullInfo.TabIndex = 6;
             this.timeSinceLastFullInfo.Text = "100h";
+            this.timeSinceLastFullInfo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // batInfoIcon
             // 
@@ -110,9 +111,9 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(362, 143);
+            this.ClientSize = new System.Drawing.Size(403, 168);
             this.Controls.Add(this.timeSinceLastFullInfo);
             this.Controls.Add(this.timeSinceLastFullLabel);
             this.Controls.Add(this.batChargingStatusInfo);
@@ -120,8 +121,9 @@
             this.Controls.Add(this.batChargePercent);
             this.Controls.Add(this.batChargeBar);
             this.Controls.Add(this.batChargeLabel);
-            this.MaximumSize = new System.Drawing.Size(380, 190);
-            this.MinimumSize = new System.Drawing.Size(380, 190);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.MaximumSize = new System.Drawing.Size(425, 224);
+            this.MinimumSize = new System.Drawing.Size(425, 224);
             this.Name = "Form1";
             this.Text = "Battery Info";
             this.ResumeLayout(false);
