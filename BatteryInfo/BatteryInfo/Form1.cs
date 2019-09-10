@@ -47,7 +47,7 @@ namespace BatteryInfo
             batChargeBar.Value = (int)batPercent; /// assign batPercent value to progress bar 
 
             // log full charge 
-            if ((int)batPercent >= 10) 
+            if ((int)batPercent >= 90) 
             {
                 System.IO.File.WriteAllText("log.txt", DateTime.Now.ToString()); /// write current time to file if charge >90%
             }
@@ -65,7 +65,7 @@ namespace BatteryInfo
                 // set notify icon text 
                 batInfoIcon.Text = "Charge: " + ((int)batPercent).ToString()
                 + "%\n" + "Charging: " + batChargingState
-                + "\n" + "Time since last charge: " + Math.Round(sinceCharge.TotalHours, 2) + 'h';
+                + "\n" + "Last charge: " + Math.Round(sinceCharge.TotalHours, 2) + 'h';
             }
             else
             {
